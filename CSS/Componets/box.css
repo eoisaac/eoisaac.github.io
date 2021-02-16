@@ -1,10 +1,9 @@
 #box{
      display: inline-block;
      background-color: #5E5E5E;
-     box-shadow: 0px 4px 10px #FF8B90;
+     box-shadow: 4px 4px 10px #FF8B90;
      text-align: center;
      padding: 20px 20px;
-
 }
 
 #box h1{

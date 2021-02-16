@@ -30,19 +30,6 @@ a::before {
     border-radius: 3px;
 } 
 
-#button{
-    display: inline-block;
-    background-color:#FF8B90;
-    padding: 15px;
-    box-shadow: 0px 4px 10px  black;
-    border-radius: 10px;
-    margin-top: 8px;
-    margin-right: 10px;
-    transition: transform 100ms linear;
-}   
-#button:hover{
-    transform: scale(1.06);
-}
 body{
     background-color: black;
 }
