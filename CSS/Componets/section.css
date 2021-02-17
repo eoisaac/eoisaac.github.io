@@ -8,3 +8,7 @@
 .section .main-title{
     margin-bottom: 60px;
 }
+.section.-bgprojects{
+    background-color: #5E5E5E;
+    border-bottom: 5px solid #FF8B90;
+}
