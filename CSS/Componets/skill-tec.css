@@ -1,5 +1,6 @@
 .skill-tec{
     display: flex;
+    align-items: center;
     font-family: "Roboto", sans-serif;
     font-size: 25px;
     font-weight: 500;
@@ -8,9 +9,14 @@
 
 .skill-tec .icon{
     margin-right: 25px;
+    width: 80px;
 }
 .skill-tec .right{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.skill-tec .title{
+    margin-bottom: 10px;
 }
