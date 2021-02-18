@@ -1,14 +1,14 @@
-.section{
+.main-section{
     background-color: #5E5E5E;
     padding-top: 50px;
     padding-bottom: 100px;
     border-bottom: 5px solid #FF8B90;
 }
 
-.section .main-title{
+.main-section .main-title{
     margin-bottom: 60px;
 }
-.section.-bgprojects{
+.main-section.-bgprojects{
     background-color: #5E5E5E;
     border-bottom: 5px solid #FF8B90;
 }
