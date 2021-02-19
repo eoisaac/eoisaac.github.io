@@ -1,14 +1,19 @@
 .main-section{
-    background-color: #5E5E5E;
+    background-color: black;
     padding-top: 50px;
     padding-bottom: 100px;
-    border-bottom: 5px solid #FF8B90;
+    border-bottom: 5px solid blueviolet;
 }
 
 .main-section .main-title{
     margin-bottom: 60px;
 }
 .main-section.-bgprojects{
-    background-color: #5E5E5E;
-    border-bottom: 5px solid #FF8B90;
+    background-color: black;
+    border-bottom: 5px solid blueviolet;
+}
+
+.main-section.-bgabout{
+    background-color: black;
+    border-bottom: 5px solid blueviolet;
 }

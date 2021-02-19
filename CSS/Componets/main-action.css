@@ -1,20 +1,19 @@
 .main-action{
     display: inline-flex;
     align-items: center;
-    color:black; 
+    color: black; 
     font-size: 23px; 
-    font-family: "Roboto", sans-serif;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-decoration: none;
     margin-right: 30px;
-    text-shadow: 2px 2px 15px #FF8B90;
+    text-shadow: 2px 2px 4px black;
  }   
  
  .main-action::before {
      content:"";
-     background-color: #FF8B90;
+     background-color: blueviolet;
      width: 10px;
      height: 10px;
      margin-right: 10px;
-     border-radius: 3px;
  } 

@@ -1,7 +1,7 @@
 .main-subtitle{
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-size: 55px;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
     color: white;
-    text-shadow: 2px 2px 15px #FF8B90;
+
 }

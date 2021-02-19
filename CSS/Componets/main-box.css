@@ -1,12 +1,11 @@
 .main-box{
      display: inline-block;
-     background-color: #5E5E5E;
-     box-shadow: 4px 4px 10px #FF8B90;
+     background-color: blueviolet;
+     box-shadow: 5px 5px 0px white;
      text-align: center;
-     padding: 15px 15px;
-     border-radius: 10px;
+     padding: 0px 0px;
 }
 
 .main-box .main-title{
-     margin-bottom: 3px;   
+     margin-bottom: 0px;   
 }

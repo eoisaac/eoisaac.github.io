@@ -2,9 +2,10 @@
 <html lang="pt-BR">
 <head>
     <title>É o site do isaas</title> <!-- Title Aba -->
+    <link rel="shortcut icon" href="assets/img/portfolio.png">
     <meta charset="utf-8"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Links Font/CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&family=Kaushan+Script&display=swap" rel="stylesheet">          
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/Componets/main-header.css">
     <link rel="stylesheet" href="CSS/Componets/main-banner.css">
@@ -23,7 +24,7 @@
 
 <body> 
         <header class="main-header"> <!-- Header -->
-            <img src="assets/img/logo.png" alt="Avatar Isaac"> <!-- Logo -->
+        <img src="assets/img/logo.png" alt="Logo isaas">
             <nav> 
                 <a class="main-action" href="" lang="en">Skills</a> <!-- Buttons -->
                 <a class="main-action" href="">Projetos</a>
@@ -33,15 +34,15 @@
             </nav>
         </header>
     <section class="main-banner"> <!-- Home Banner -->
-        <div class="wrapper">   
+        <div class="wrapper">         
                 <div class="main-box">        
                         <h1 class="main-title">isaac</h1>
-                        <h2 class="main-subtitle">Em obras...</h2>
+                        <h2 class="main-title -second">Em obras...</h2>
                 </div>
 
             <div class="navigation">  
-                <a class="main-button"href="" lang="en">Download CV</a>
-                <a class="main-button"href="">Contato</a>
+                <a class="main-button -btwhite"href="" lang="en">Download CV</a>
+                <a class="main-button -btwhite"href="">Contato</a>
             </div> 
         </div> 
     </section>
@@ -52,7 +53,7 @@
             <article class="skill-tec"> <!-- Skills Progress Bar -->
                     <img class="icon" src="assets/icons/iconHTML.png" alt="Icon HTML">
                 <div class="right"> <!-- Juntar Bar + Title -->
-                        <h3 class="title">HTML</h3> <!-- Create Name Skill -->
+                        <h3 class="main-subtitle">HTML</h3> <!-- Create Name Skill -->
                         <progress class="progress-bar" max="100" value="70"> <!-- Create ProgressBar -->
                             70%
                         </progress>
@@ -61,7 +62,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconCSS.png" alt="Icon CSS">
             <div class="right"> 
-                    <h3 class="title">CSS</h3> 
+                    <h3 class="main-subtitle">CSS</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -70,7 +71,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconPS.png" alt="Icon PS">
             <div class="right"> 
-                    <h3 class="title">Photoshop</h3> 
+                    <h3 class="main-subtitle">Photoshop</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -79,7 +80,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconIL.png" alt="Icon IL">
             <div class="right"> 
-                    <h3 class="title">Illustrator</h3> 
+                    <h3 class="main-subtitle">Illustrator</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -88,7 +89,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconLOL.png" alt="Icon LOL">
             <div class="right"> 
-                    <h3 class="title">League of Legends</h3> 
+                    <h3 class="main-subtitle">League of Legends</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -97,7 +98,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconVAL.png" alt="Icon VAL">
             <div class="right"> 
-                    <h3 class="title">Valorant</h3> 
+                    <h3 class="main-subtitle">Valorant</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -106,7 +107,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconNFS.png" alt="Icon NFS">
             <div class="right"> 
-                    <h3 class="title">Piloto de Fuga</h3> 
+                    <h3 class="main-subtitle">Piloto de Fuga</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -115,7 +116,7 @@
             <article class="skill-tec"> 
                 <img class="icon" src="assets/icons/iconMC.png" alt="Icon MC">
             <div class="right"> 
-                    <h3 class="title">Eng. Civil</h3> 
+                    <h3 class="main-subtitle">Eng. Civil</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70% 
                     </progress>
@@ -124,7 +125,7 @@
         </div>
     </section>
 
-    <section class="main-section -bgprojects">
+    <section class="main-section -bgprojects"> <!-- Section Projects -->
         <h2 class="main-title -second">Projetos</h2>
 
         <div class="wrapper-card">
@@ -139,11 +140,16 @@
                 </figure>
             </a>
             <a href="">
-                <figure class="card-project -grey">
+                <figure class="card-project -terceiro">
                     <img src="assets/img/blitz.png" alt="blitz">
                 </figure>
             </a>
         </div>
+    </section>
+
+    <section class="main-section -bgabout"> <!-- Section About -->
+        <h2 class="main-title -second">Sobre</h2>
+        <h3 class="main-subtitle">Teste</h3>
     </section>
 </body>
 </html>
