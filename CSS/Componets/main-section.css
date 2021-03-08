@@ -8,12 +8,14 @@
 .main-section .main-title{
     margin-bottom: 60px;
 }
+
 .main-section.-bgprojects{
     background-color: black;
     border-bottom: 5px solid blueviolet;
 }
 
 .main-section.-bgabout{
-    background-color: black;
+    background-color: white;
     border-bottom: 5px solid blueviolet;
 }
+

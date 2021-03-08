@@ -18,23 +18,3 @@
     background-color: rgb(161, 60, 255);
 }
 
-.main-button.-btwhite{
-    display: inline-block;
-    font-family: "Fira Code", Arial, Helvetica, sans-serif;
-    background-color:blueviolet;
-    padding: 15px;
-    box-shadow: 4px 4px 0px  white;
-    margin-top: 8px;
-    margin-right: 10px;
-    transition: transform 100ms linear;
-    font-size: 23px; 
-    font-weight: 500;
-    text-decoration: none;
-    color:white;
-    text-shadow: 2px 2px 5px black;
-}
-
-.main-button.-btwhite:hover{
-    transform: scale(1.06);
-    background-color: rgb(161, 60, 255);
-}

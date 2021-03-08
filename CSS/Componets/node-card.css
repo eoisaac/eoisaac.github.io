@@ -1,0 +1,45 @@
+.node-card{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+
+.node-card::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    height: 0px;
+    width: 40px;
+    border: 2.5px dashed black;
+    transform: rotate(90deg) translateX(-62%);
+    bottom: 140px;
+}
+
+.node-card .title{
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.node-card .logo{
+    display: flex;
+    align-items: center;
+    height: 140px;
+    border: 5px solid black;
+    padding-left: 20px;
+    padding-right: 20px ;
+    background-color: blueviolet;
+}
+
+.node-card.-clean .logo{   /* usar o "-clean" pra quandoa  logo for preenchida e nao ter borda */
+    padding: 0;
+}
+
+.node-card.-editcolor .logo{   /* usar o "-editcolor" pra mudar cor background  */
+    color: white;
+}

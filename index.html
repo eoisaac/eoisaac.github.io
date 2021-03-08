@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="CSS/Componets/skill-tec.css"> 
     <link rel="stylesheet" href="CSS/Componets/progress-bar.css">
     <link rel="stylesheet" href="CSS/Componets/card-project.css">
+    <link rel="stylesheet" href="CSS/Componets/main-about.css">
+    <link rel="stylesheet" href="CSS/Componets/button-arrow.css">
+    <link rel="stylesheet" href="CSS/Componets/node-card.css">
+    <link rel="stylesheet" href="CSS/Componets/main-carousel.css">
 </head>
 
 <body> 
@@ -41,8 +45,8 @@
                 </div>
 
             <div class="navigation">  
-                <a class="main-button -btwhite"href="" lang="en">Download CV</a>
-                <a class="main-button -btwhite"href="">Contato</a>
+                <a class="main-button" href="" lang="en">Download CV</a>
+                <a class="main-button" href="">Contato</a>
             </div> 
         </div> 
     </section>
@@ -69,7 +73,16 @@
             </div>
             </article>
             <article class="skill-tec"> 
-                <img class="icon" src="assets/icons/iconPS.png" alt="Icon PS">
+                <img class="icon" src="assets/icons/iconJS.png" alt="Icon PS">
+            <div class="right"> 
+                    <h3 class="main-subtitle">JavaScript</h3> 
+                    <progress class="progress-bar" max="100" value="70"> 
+                        70%
+                    </progress>
+            </div>
+            </article>
+            <article class="skill-tec"> 
+                <img class="icon" src="assets/icons/iconPS.png" alt="Icon IL">
             <div class="right"> 
                     <h3 class="main-subtitle">Photoshop</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
@@ -78,18 +91,9 @@
             </div>
             </article>
             <article class="skill-tec"> 
-                <img class="icon" src="assets/icons/iconIL.png" alt="Icon IL">
+                <img class="icon" src="assets/icons/iconIL.png" alt="Icon LOL">
             <div class="right"> 
                     <h3 class="main-subtitle">Illustrator</h3> 
-                    <progress class="progress-bar" max="100" value="70"> 
-                        70%
-                    </progress>
-            </div>
-            </article>
-            <article class="skill-tec"> 
-                <img class="icon" src="assets/icons/iconLOL.png" alt="Icon LOL">
-            <div class="right"> 
-                    <h3 class="main-subtitle">League of Legends</h3> 
                     <progress class="progress-bar" max="100" value="70"> 
                         70%
                     </progress>
@@ -150,6 +154,62 @@
     <section class="main-section -bgabout"> <!-- Section About -->
         <h2 class="main-title -second">Sobre</h2>
         <h3 class="main-subtitle">Teste</h3>
+        
+            <section class="main-carousel">
+                <button class="button-arrow -left"><span class="content">Avançar</span></button>
+
+                <div class="items">
+                        <div class="elements">
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/img/eoisaas.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/icons/iconCSS.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/icons/iconHTML.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/img/eoisaas.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/icons/iconCSS.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+
+                            <figure class="node-card">
+                                <figcaption class="title">2021</figcaption>
+                                <div class="logo">
+                                <img src="assets/icons/iconHTML.png" alt="Logo Teste">
+                                </div>
+                            </figure>
+                    </div>
+                </div>
+
+                <button class="button-arrow -right"><span class="content">Voltar</span></button>
+        </section>
+        <p class="main-about">
+            shauhsuahsuahsuahushaushaushauhsuahsuahsuahsuahsuahsuahsuhaubfdfdbfdbdfsbdsfbsa shauhsuahsuahsuahushaushaushauhsuahsuahsuahsuahsuahsuahsuhaubfdfdbfdbdfsbdsfbsa shauhsuahsuahsuahushaushaushauhsuahsuahsuahsuahsuahsuahsuhaubfdfdbfdbdfsbdsfbsa
+        </p>
     </section>
+
+    <script src="js/components/main-carousel.js"></script>
 </body>
 </html>
