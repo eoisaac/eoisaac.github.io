@@ -12,14 +12,19 @@
     text-decoration: none;
     color:white;
     text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+}
+
+.main-button:hover{
+    transform: scale(1.06);
+    background-color: rgb(161, 60, 255);
 }
 
 .main-button.-full{
     width: 100%;
 }
 
-.main-button:hover{
-    transform: scale(1.06);
-    background-color: rgb(161, 60, 255);
+.main-button.-full:hover{
+    transform: scale(1.02);
 }
 
