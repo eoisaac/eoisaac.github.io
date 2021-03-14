@@ -2,12 +2,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #40E0D0;
     width: 280px;
     height: 280px;
-    box-shadow: 4px 4px 0px  blueviolet;
+    box-shadow: 4px 4px 0px  #023633;
     transition: transform 100ms linear;
 }
 .card-project.-terceiro{
-    background-color: black;
+    background-color: #40E0D0;
 }

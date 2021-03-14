@@ -1,7 +1,7 @@
 .main-button{
     display: inline-block;
     font-family: "Fira Code", Arial, Helvetica, sans-serif;
-    background-color:blueviolet;
+    background-color:#40E0D0;
     padding: 15px;
     box-shadow: 4px 4px 0px  black;
     margin-top: 8px;
@@ -17,7 +17,7 @@
 
 .main-button:hover{
     transform: scale(1.06);
-    background-color: rgb(161, 60, 255);
+    background-color: #22ffe9;
 }
 
 .main-button.-full{

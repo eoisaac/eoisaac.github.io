@@ -13,7 +13,7 @@
     box-sizing: border-box;
     height: 0px;
     width: 40px;
-    border: 2.5px dashed white;
+    border: 2.5px dashed #023633;
     transform: rotate(90deg) translateX(-62%);
     bottom: 140px;
 }
@@ -30,10 +30,10 @@
     display: flex;
     align-items: center;
     height: 140px;
-    border: 5px solid white;
+    border: 5px solid #023633;
     padding-left: 20px;
     padding-right: 20px ;
-    background-color: blueviolet;
+    background-color: #40E0D0;
 }
 
 .node-card.-clean .logo{   /* usar o "-clean" pra quandoa  logo for preenchida e nao ter borda */

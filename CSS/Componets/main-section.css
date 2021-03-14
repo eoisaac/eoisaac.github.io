@@ -1,8 +1,8 @@
 .main-section{
-    background-color: black;
+    background-color: #23a8a8;
     padding-top: 50px;
     padding-bottom: 100px;
-    border-bottom: 5px solid blueviolet;
+    border-bottom: 5px solid #023633;
 }
 
 .main-section .main-title{
@@ -10,12 +10,12 @@
 }
 
 .main-section.-bgprojects{
-    background-color: black;
-    border-bottom: 5px solid blueviolet;
+    background-color: #23a8a8;
+    border-bottom: 5px solid #023633;
 }
 
 .main-section.-bgabout{
-    background-color: black;
-    border-bottom: 5px solid blueviolet;
+    background-color: #23a8a8;
+    border-bottom: 5px solid #023633;
 }
 

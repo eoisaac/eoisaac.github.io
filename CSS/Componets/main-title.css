@@ -2,12 +2,12 @@
     font-family: "Kaushan Script", cursive;
     font-weight: 400;
     font-size: 80px;
-    color: black;
-    text-shadow: 2px 2px 3px black;
+    color: #08716c;
+    text-shadow: 3px 3px 0px black;
 }
 
 .main-title.-second{
     color:white;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 3px 3px 0px black;
     text-align: center;
 }

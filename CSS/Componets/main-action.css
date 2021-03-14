@@ -11,8 +11,12 @@
  
  .main-action::before {
      content:"";
-     background-color: blueviolet;
+     background-color: #40E0D0;
      width: 10px;
      height: 10px;
      margin-right: 10px;
  } 
+
+.main-action:hover{
+    transform: scale(1.02);
+}
