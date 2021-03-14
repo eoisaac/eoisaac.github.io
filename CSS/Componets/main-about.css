@@ -1,7 +1,7 @@
 .main-about{
-    background-color: white;
-    font-size: 30px;
+    color: white;
+    font-size: 25px;
     font-family: "Fira Code", Arial, Helvetica, sans-serif;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
