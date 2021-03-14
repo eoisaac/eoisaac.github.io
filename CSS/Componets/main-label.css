@@ -1,0 +1,11 @@
+form{
+    background-color: black;
+}
+.main-label{
+    color: white;
+    font-family: "Fira Code", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    
+}
