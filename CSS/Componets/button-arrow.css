@@ -23,6 +23,8 @@
 
 .button-arrow.-left::before{
     transform: rotate(180deg) translateX(13px);
-    
+}
 
+.button-arrow:hover{
+    background-color: #22ffe9;
 }

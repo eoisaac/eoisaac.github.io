@@ -11,3 +11,8 @@
 .card-project.-terceiro{
     background-color: #40E0D0;
 }
+
+.card-project:hover{
+    transform: scale(1.02);
+    background-color: #22ffe9;
+}
