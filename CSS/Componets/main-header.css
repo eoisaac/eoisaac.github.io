@@ -1,6 +1,9 @@
 .main-header{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     background-color: white;
     border-bottom: 5px solid #023633;
+    z-index: 10;
  }

@@ -1,9 +1,12 @@
 .main-form{
-    padding: 50px 40px;   
+    padding-top: 100px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
 }
 
 .main-form .main-title{
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 
 .main-form .main-input{
@@ -11,5 +14,5 @@
 }
 
 .main-form .main-input.-textarea{
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
