@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-	/*[COLORS]==========*/
+	/*[COLORS]====================================================================*/
 	/*Main*/
 	--primary-color: #9368FC;
 	
@@ -11,6 +11,7 @@
 	--bg-color: #121214;
 	--primary-container-color: #202024;
 	--secondary-container-color: #29292e;
+  --tertiary-container-color: #000000;
 
 	/*Titles*/
 	--primary-title-color: #FFFFFF;
@@ -26,10 +27,10 @@
 	--alert: #ffcd1e;
 	--error: #e83f5b;
 
-	/*[FONT]=============*/
+	/*[FONT]======================================================================*/
 	/*Family*/
-	--sans-serif-font: 'Poppins', sans-serif;
-	--monospace-font: 'Fira Code', monospace;
+	--sans-serif-font: 'Fira Code', monospace;
+	--monospace-font: 'Poppins', sans-serif;
 
 	/*Weight*/
 	--tiny-font-weight: 100;
@@ -44,10 +45,11 @@
   --small-font-size: 1.5rem;
   --medium-font-size: 2rem;
   --big-font-size: 2.5rem;
-  --large-font-size: 4rem;
-  --huge-font-size: 8rem;
+  --large-font-size: 3.2rem;
+  --extra-large-font-size: 4rem;
+  --huge-font-size: 7.8rem;
 
-	/*[SIZES]===========*/
+	/*[SIZES]=====================================================================*/
 	/*Border*/
 	--main-border-radius: 0.5rem; /* 0.8rem */
   --round-border-radius: 50%;
@@ -78,7 +80,7 @@
 }
 
 .light:root {
-	/*[COLORS]==========*/
+	/*[COLORS]====================================================================*/
 }
 
 html {

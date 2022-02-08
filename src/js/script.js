@@ -1,3 +1,39 @@
+// SCROLL ANIMATION ============================================================
+const debounce = function(func, wait, immediate) {
+  let timeout;
+  return function(...args) {
+    const context = this;
+    const later = function () {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    const callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+};
+
+const animationElements = document.querySelectorAll('[data-animation]');
+const animationClass = 'animate';
+
+const scrollAnimation = () => {
+  const windowTop = window.pageYOffset + window.innerHeight * 0.75;
+  animationElements.forEach((element) => {
+    windowTop > element.offsetTop 
+    ? element.classList.add(animationClass) 
+    : element.classList.remove(animationClass) 
+  })
+};
+
+scrollAnimation();
+
+if(animationElements.length) {
+  window.addEventListener('scroll', debounce(function() {
+    scrollAnimation();
+  }, 200));
+}
+
 // OPEN / CLOSE MOBILE MENU ====================================================
 const navMenu = document.querySelector('[data-js="nav-menu"]');
 const navLinksList = document.querySelector('[data-js="nav-links-list"]');
@@ -29,7 +65,7 @@ const closeMobileMenuOnLinkClick = (event) => {
 
 navLinksList.addEventListener('click', closeMobileMenuOnLinkClick);
 
-// CURRENT LINK / CHANGE TAB TITLE ==============================================
+// CURRENT LINK / CHANGE TAB TITLE =============================================
 const allSectionsPages = document.querySelectorAll('.section');
 const allPageNavLinks = document.querySelectorAll('.nav__link');
 
@@ -58,3 +94,4 @@ const currentNavLink = () => {
 };
 
 window.addEventListener('scroll', currentNavLink);
+

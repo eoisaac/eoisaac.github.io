@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/css/reset.css" />
     <link rel="stylesheet" href="src/css/root.css" />
+    <link rel="stylesheet" href="src/css/animations.css" />
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/responsive.css" />
     <link
@@ -25,7 +26,9 @@
           <div class="nav__menu" data-js="nav-menu">
             <ul class="nav__list" data-js="nav-links-list">
               <li class="nav__item">
-                <a href="#home" class="home nav__link nav__link--current"> Home </a>
+                <a href="#home" class="home nav__link nav__link--current">
+                  Home
+                </a>
               </li>
               <li class="nav__item">
                 <a href="#about" class="about nav__link"> About </a>
@@ -58,10 +61,50 @@
       </header>
 
       <main class="spacing">
-        <section class="section container" id="home">Home</section>
-        <section class="section container" id="about">About</section>
-        <section class="section container" id="projects">Projects</section>
-        <section class="section container" id="contact">Contact</section>
+        <section class="section section--home container" id="home">
+          <h1
+            class="section__text section__text--serif"
+            data-animation="top-bottom"
+          >
+            Hi, my name is
+          </h1>
+          <h2
+            class="section__title section__title--huge"
+            data-animation="top-bottom"
+          >
+            Isaac Santiago;
+          </h2>
+          <h3
+            class="section__subtitle section__subtitle--huge"
+            data-animation="bottom-top"
+          >
+            I build things for the web.
+          </h3>
+          <p
+            class="section__text section__text--mono"
+            data-animation="bottom-top"
+          >
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+            sint cumque enim adipisci non eligendi, voluptatum nam quae id
+            saepe! Dolor rem pariatur quos esse cumque laborum nostrum sequi
+            ipsum!
+          </p>
+        </section>
+        <section class="section section--about container" id="about">
+          About
+        </section>
+        <section
+          class="projects section--projects section container"
+          id="projects"
+        >
+          Projects
+        </section>
+        <section
+          class="contact section section--contact container"
+          id="contact"
+        >
+          Contact
+        </section>
       </main>
     </div>
     <script src="src/js/script.js"></script>

@@ -41,6 +41,10 @@
 	.nav__link {
 		font-size: var(--small-font-size);
 	}
+
+	.nav__config::before {
+		display: none;
+	}
 }
 
 @media (min-width: 960px){ 
