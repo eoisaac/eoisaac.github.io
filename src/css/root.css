@@ -28,19 +28,53 @@
 
 	/*[FONT]=============*/
 	/*Family*/
-	
+	--sans-serif-font: 'Poppins', sans-serif;
+	--monospace-font: 'Fira Code', monospace;
 
 	/*Weight*/
+	--tiny-font-weight: 100;
+  --small-font-weight: 200;
+  --medium-font-weight: 300;
+  --big-font-weight: 400;
+  --large-font-weight: 500;
+  --huge-font-weight: 600;
+
+	/*Size*/
+  --tiny-font-size: 1rem;
+  --small-font-size: 1.5rem;
+  --medium-font-size: 2rem;
+  --big-font-size: 2.5rem;
+  --large-font-size: 4rem;
+  --huge-font-size: 8rem;
 
 	/*[SIZES]===========*/
 	/*Border*/
+	--main-border-radius: 0.5rem; /* 0.8rem */
+  --round-border-radius: 50%;
 
 	/*Margin*/
+  --tiny-margin: 0.5rem;
+  --small-margin: 1rem;
+  --medium-margin: 1.5rem;
+  --big-margin: 2rem;
+  --large-margin: 2.5rem;
+  --huge-margin: 3rem;
 
 	/*Padding*/
+  --tiny-padding: 10px;
+  --small-padding: 15px;
+  --medium-padding: 25px;
+  --big-padding: 50px;
+  --large-padding: 100px;
+  --huge-padding: 150px;
 
 	/*Gap*/
-
+  --tiny-gap: 0.5rem;
+  --small-gap: 1rem;
+  --medium-gap: 1.5rem;
+  --big-gap: 2rem;
+  --large-gap: 2.5rem;
+  --huge-gap: 3rem;
 }
 
 .light:root {
@@ -51,7 +85,7 @@
 html {
   font-size: 62.5%;
   /* font-size: 10px; */
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--sans-serif-font);
   font-weight: 300;
   scroll-behavior: smooth;
 }

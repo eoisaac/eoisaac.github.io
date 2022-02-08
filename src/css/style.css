@@ -1,0 +1,29 @@
+/*[GLOBAL]==========*/
+.root {
+	max-width: 100vw;
+	--minheight: 100vh;
+	background-color: var(--bg-color);
+}
+
+.main {
+	padding: 0 var(--small-padding);
+	background-color: var(--background);
+	background-color: blueviolet;
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: violet;
+}
+
+.section {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0 auto;
+	border-bottom: 2px solid var(--light-gray);
+	background-color: aqua;
+}
+
+/*[HEADER]==========*/
