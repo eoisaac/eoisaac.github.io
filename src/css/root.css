@@ -61,12 +61,12 @@
   --huge-margin: 3rem;
 
 	/*Padding*/
-  --tiny-padding: 10px;
-  --small-padding: 15px;
-  --medium-padding: 25px;
-  --big-padding: 50px;
-  --large-padding: 100px;
-  --huge-padding: 150px;
+  --tiny-padding: 1rem;
+  --small-padding: 1.5rem;
+  --medium-padding: 2.5rem;
+  --big-padding: 5rem;
+  --large-padding: 10rem;
+  --huge-padding: 15rem;
 
 	/*Gap*/
   --tiny-gap: 0.5rem;

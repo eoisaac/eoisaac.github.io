@@ -1,29 +1,43 @@
 /*[GLOBAL]==========*/
 .root {
 	max-width: 100vw;
-	--minheight: 100vh;
+	min-height: 100vh;
 	background-color: var(--bg-color);
 }
 
-.main {
+.spacing { /* padding entre o root e o container  */
 	padding: 0 var(--small-padding);
 	background-color: var(--background);
-	background-color: blueviolet;
 }
 
-.container {
+.container { /* limita o tamanho */
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
 	background-color: violet;
 }
 
-.section {
+.section { /* Sections */
 	width: 100%;
 	min-height: 100vh;
-	margin: 0 auto;
 	border-bottom: 2px solid var(--light-gray);
 	background-color: aqua;
 }
 
+.b {
+	background-color: darkcyan;
+}
+
 /*[HEADER]==========*/
+.top-fixed {
+	width: 100vw;
+	position: fixed;
+	inset: 0 0 auto 0;
+	background-color: var(--bg-color);
+}
+
+.header {
+	height: 80px;
+	background-color: orange;
+}
+
