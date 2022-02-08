@@ -74,7 +74,7 @@
   --medium-gap: 1.5rem;
   --big-gap: 2rem;
   --large-gap: 2.5rem;
-  --huge-gap: 3rem;
+  --huge-gap: 4rem;
 }
 
 .light:root {
@@ -85,6 +85,6 @@ html {
   font-size: 62.5%;
   /* font-size: 10px; */
   font-family: var(--sans-serif-font);
-  font-weight: 300;
+  font-weight: 400;
   scroll-behavior: smooth;
 }

@@ -16,25 +16,53 @@
   </head>
   <body>
     <div class="root">
+      <header class="header top-fixed spacing">
+        <nav class="nav container">
+          <h2>
+            <a href="#home" class="nav__logo"> &lti&gt </a>
+          </h2>
 
-			<div class="top-fixed spacing">
-				<header class="header container ">
-					<!-- Logo -->
-					<!-- Nav -->
-					<!-- wrap com botões(lang e tema) -->
-				</header>
-			</div>
+          <div class="nav__menu" data-js="nav-menu">
+            <ul class="nav__list" data-js="nav-links-list">
+              <li class="nav__item">
+                <a href="#home" class="home nav__link nav__link--current"> Home </a>
+              </li>
+              <li class="nav__item">
+                <a href="#about" class="about nav__link"> About </a>
+              </li>
+              <li class="nav__item">
+                <a href="#projects" class="projects nav__link"> Projects </a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="contact nav__link"> Contact </a>
+              </li>
+            </ul>
 
-			<main class="spacing">
-				
-				<section class="section container">
+            <div class="nav__config">
+              <button class="icon-btn">
+                <i class="uil uil-sun"></i>
+              </button>
+              <button class="icon-btn">
+                <i class="uil uil-language"></i>
+              </button>
+            </div>
+          </div>
 
-				</section>
-				<section class="section container b">
+          <button
+            class="icon-btn icon-btn--toggle-mobile"
+            data-js="toggle-mobile-menu-btn"
+          >
+            <i class="uil uil-bars" data-js="mobile-menu-icon"></i>
+          </button>
+        </nav>
+      </header>
 
-				</section>
-
-			</main>
+      <main class="spacing">
+        <section class="section container" id="home">Home</section>
+        <section class="section container" id="about">About</section>
+        <section class="section container" id="projects">Projects</section>
+        <section class="section container" id="contact">Contact</section>
+      </main>
     </div>
     <script src="src/js/script.js"></script>
   </body>
