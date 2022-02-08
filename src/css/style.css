@@ -1,4 +1,8 @@
 /*[GLOBAL]==========*/
+body {
+	background-color: var(--bg-color);
+}
+
 .root {
 	max-width: 100vw;
 	min-height: 100vh;
@@ -30,7 +34,6 @@
 
 /*[HEADER]==========*/
 .top-fixed {
-	width: 100vw;
 	position: fixed;
 	inset: 0 0 auto 0;
 	background-color: var(--bg-color);
