@@ -4,9 +4,13 @@
 		padding: 0 var(--medium-padding);
 	}
 
-	.section__text {
+	/* .section__text {
 		font-size: var(--medium-font-size);
 		line-height: 25px;
+	} */
+
+	.about__image {
+		width: 200px;
 	}
 }
 
@@ -47,6 +51,21 @@
 		font-size: var(--small-font-size);
 	}
 
+	.nav__config::before {
+		display: none;
+	}
+
+	/*[SECTIONS]==========*/
+	.about__content {
+		display: grid;
+		grid-template-columns: 3fr 2fr;
+		place-items: unset;
+	}
+
+	.about__image {
+		width: 300px;
+		justify-self: flex-end;
+	}
 }
 
 @media (min-width: 960px){ 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,26 +27,23 @@
             <ul class="nav__list" data-js="nav-links-list">
               <li class="nav__item">
                 <a href="#home" class="home nav__link nav__link--current">
-                  Home
+                  Início
                 </a>
               </li>
               <li class="nav__item">
-                <a href="#about" class="about nav__link"> About </a>
+                <a href="#about" class="about nav__link"> Sobre </a>
               </li>
               <li class="nav__item">
-                <a href="#projects" class="projects nav__link"> Projects </a>
+                <a href="#projects" class="projects nav__link"> Projetos </a>
               </li>
               <li class="nav__item">
-                <a href="#contact" class="contact nav__link"> Contact </a>
+                <a href="#contact" class="contact nav__link"> Contato </a>
               </li>
             </ul>
 
             <div class="nav__config">
               <button class="icon-btn">
                 <i class="uil uil-sun"></i>
-              </button>
-              <button class="icon-btn icon-btn--disabled ">
-                <i class="uil uil-language"></i>
               </button>
             </div>
           </div>
@@ -62,52 +59,66 @@
 
       <main class="spacing">
         <section class="section section--home container" id="home">
-          <h1
-            class="section__text section__text--serif"
-            data-animation="top-bottom"
-          >
-            Hi, my name is
-          </h1>
-          <h2
-            class="section__title section__title--huge"
-            data-animation="top-bottom"
-          >
-            Isaac Santiago;
-          </h2>
-          <h3
-            class="section__subtitle section__subtitle--huge"
-            data-animation="bottom-top"
-          >
-            I build things for the web.
+          <h1 class="section__text section__text--serif">Oi, meu nome é</h1>
+          <h2 class="section__title section__title--huge">Isaac Santiago;</h2>
+          <h3 class="section__subtitle section__subtitle--huge">
+            Eu desenvolvo para web.
           </h3>
-          <p
-            class="section__text section__text--mono"
-            data-animation="bottom-top"
-          >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
-            sint cumque enim adipisci non eligendi, voluptatum nam quae id
-            saepe! Dolor rem pariatur quos esse cumque laborum nostrum sequi
-            ipsum!
+          <p class="section__text section__text--mono">
+            Sou desenvolvedor Front-End. Apaixonado por programação e tecnologia, atualmente estou estudando JavaScript, HTML e CSS.
           </p>
 
-          <button class="box-btn" data-animation="bottom-top">
-            Scroll down
+          <a href="#projects" class="box-btn">
+            Ver projetos
             <i class="uil uil-angle-down"></i>
-          </button>
+          </a>
         </section>
         <section class="section section--about container" id="about">
-          About
+          <h2 class="section__title">Sobre mim</h2>
+          <div class="about__content">
+            <div>
+              <p class="section__text section__text--mono">
+                Meu nome é Isaac Santiago Gomes Pereira, nasci em Ouro Branco,
+                MG, e atualmente estou estudando sobre desenvolvimento Front-End
+                e cursando Sistemas de Informação.
+              </p>
+              <p class="section__text section__text--mono">
+                Quando sai do ensino médio, entrei na faculdade de Engenharia de
+                Bioprocessos na UFSJ, onde tive meu primeiro contato com
+                programação através da matéria de Algoritmos e Estrutura de
+                Dados, na qual aprendi o básico da linguagem C. A partir dai,
+                decidi que queria seguir na carreira de programação.
+              </p>
+              <p class="section__text section__text--mono">
+                Por acaso, procurando lives na Twitch, encontrei o canal do
+                <a
+                  href="https://www.twitch.tv/marcobrunodev"
+                  target="_blank"
+                  class="section__link"
+                  >Marco Bruno</a
+                >
+                e comecei a acompanhá-lo. Ele estava desenvolvendo uma
+                plataforma de cursos, a FiredLabs, e lá tinha um curso básico
+                sobre HTML e CSS, no qual o projeto era desenvolver um site
+                portfólio. Após terminar esse curso, comecei a me interessar
+                mais por desenvolver sites, e, desde então, venho estudando
+                JavaScript, HTML e CSS, e, tenho como objetivo aprender React e
+                Node futuramente.
+              </p>
+            </div>
+            <img
+              src="src/img/me.png"
+              alt="Isaac's picture"
+              class="about__image"
+            />
+          </div>
         </section>
-        <section
-          class="projects section--projects section container"
-          id="projects"
-        >
+
+        <section class="section section--projects container" id="projects">
           Projects
         </section>
-        <section
-          class="contact section section--contact container"
-          id="contact"
-        >
+
+        <section class="section section--contact container" id="contact">
           Contact
         </section>
       </main>
