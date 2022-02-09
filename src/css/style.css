@@ -27,32 +27,31 @@ body {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 30px;
+	padding-top: 110px;
   border-bottom: 1px solid var(--secondary-text-color);
 }
 
 /*[TEXT]========================================================================*/
 .section__title {
-  font-size: clamp(40px, 1rem + 8vw, 70px);
+	font-size: var(--large-font-size);
   color: var(--primary-text-color);
-  line-height: 85px;
   font-family: var(--monospace-font);
   font-weight: var(--huge-font-weight);
 }
 
 .section__title--huge {
-  font-size: var(--huge-font-size);
+	font-size: clamp(40px, 8vw, 70px);
 }
 
 .section__subtitle {
-  font-size: clamp(40px, 8vw, 70px);
+  font-size: var(--large-font-size);
   color: var(--secondary-text-color);
-  line-height: 85px;
   font-family: var(--monospace-font);
   font-weight: var(--huge-font-weight);
 }
 
 .section__subtitle--huge {
-  font-size: var(--huge-font-size);
+	font-size: clamp(40px, 1rem + 8vw, 70px);
 }
 
 .section__text {
