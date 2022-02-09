@@ -20,9 +20,9 @@
 // const scrollAnimation = () => {
 //   const windowTop = window.pageYOffset + window.innerHeight;
 //   animationElements.forEach((element) => {
-//     windowTop > element.offsetTop 
-//     ? element.classList.add(animationClass) 
-//     : element.classList.remove(animationClass) 
+//     windowTop > element.offsetTop
+//     ? element.classList.add(animationClass)
+//     : element.classList.remove(animationClass)
 //   })
 // };
 
@@ -95,3 +95,5 @@ const currentNavLink = () => {
 
 window.addEventListener('scroll', currentNavLink);
 
+// UPDATE COPRIGHT YEAR ========================================================
+const coprightYear = document.querySelector('[data-js"copright-year"]');
