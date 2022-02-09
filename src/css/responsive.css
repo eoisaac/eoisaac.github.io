@@ -3,6 +3,11 @@
 	.spacing {
 		padding: 0 var(--medium-padding);
 	}
+
+	.section__text {
+		font-size: var(--medium-font-size);
+		line-height: 25px;
+	}
 }
 
 @media (min-width: 768px){ 
@@ -42,9 +47,6 @@
 		font-size: var(--small-font-size);
 	}
 
-	.nav__config::before {
-		display: none;
-	}
 }
 
 @media (min-width: 960px){ 

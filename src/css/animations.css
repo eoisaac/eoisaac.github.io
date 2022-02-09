@@ -1,6 +1,6 @@
 [data-animation] {
 	opacity: 0;
-	transition: 1500ms;
+	transition: 1000ms;
 }
 
 [data-animation="top-bottom"] {
