@@ -9,8 +9,20 @@ const getItemOfLocalStorage = (key) => {
 };
 
 const removeItemOfLocalStorage = (key) => {
-  if (key)  localStorage.removeItem(key);
+  if (key) localStorage.removeItem(key);
   return;
+};
+
+// CREATE DOM ELEMENTS =========================================================
+const createDOMElement = (elementTag, attributes) => {
+  const element = document.createElement(elementTag);
+  const attributesArray = Object.entries(attributes);
+
+  attributesArray.forEach(([key, value]) => {
+    element.setAttribute(key, value);
+  });
+
+  return element;
 };
 
 // SCROLL ANIMATION ============================================================
@@ -137,7 +149,7 @@ updateCopyrightYear();
 
 // UPDATE MY AGE ===============================================================
 const myAge = document.querySelector('[data-js="my-current-age"]');
-const myBDay = '21/03/2001'
+const myBDay = '21/03/2001';
 
 console.log(getCurrentDate());
 
@@ -169,3 +181,99 @@ const toggleSiteTheme = () => {
 toggleThemeBtn.addEventListener('click', toggleSiteTheme);
 
 // PROJECTS CARDS  =============================================================
+const mainProjectsGrid = document.querySelector(
+  '[data-js="main-projects-grid"]'
+);
+const moreProjectsGrid = document.querySelector(
+  '[data-js="more-projects-grid"]'
+);
+const displayProjectsBtn = document.querySelector(
+  '[data-js="display-projects-btn"]'
+);
+
+let projectsCounter = 0;
+
+const API = {
+  user: 'eoisaac',
+  url: 'https://api.github.com/users',
+};
+
+const createProjectsCards = () => {
+  const projects = JSON.parse(getItemOfLocalStorage('projectsData'));
+
+  projects.forEach(({ name, html_url, homepage, description, topics }) => {
+    ++projectsCounter;
+
+    const projectCard = createDOMElement('article', {
+      class: 'project-card',
+    });
+
+    const projectName = name.replace('_', ' ');
+    const projectDescription = description ? description : '';
+    const homepageLink = homepage
+      ? `<a href="${homepage}" target="_blank" class="icon-btn card__link">
+          <i class="uil uil-external-link-alt"></i>
+         </a>`
+      : '';
+    const tags = topics ? topics.join(' ') : '';
+
+    projectCard.innerHTML = `
+      <header class="card__header">
+        <div class="card__top">
+          <img
+            src="src/img/folder.svg"
+            alt="Folder icon"
+            class="card__image"
+          />
+          <div class="card__links">
+            <a href="${html_url}" target="_blank" class="icon-btn card__link">
+              <i class="uil uil-github-alt"></i>
+            </a>
+            ${homepageLink}
+          </div>
+        </div>
+        <div class="card__content">
+          <h3 class="card__title">${projectName}</h3>
+          <p class="card__description">
+            ${projectDescription}
+          </p>
+        </div>
+      </header>
+      <footer class="card__tag">
+        ${tags}
+      </footer>`;
+
+    projectsCounter <= 6
+      ? mainProjectsGrid.appendChild(projectCard)
+      : moreProjectsGrid.appendChild(projectCard);
+  });
+};
+
+const displayHideMoreProjects = () => {
+  moreProjectsGrid.classList.toggle('projects__grid--display');
+
+  if (moreProjectsGrid.classList.contains('projects__grid--display')) {
+    displayProjectsBtn.innerHTML = 'Ver menos <i class="uil uil-angle-up"></i>';
+  } else {
+    displayProjectsBtn.innerHTML =
+      'Ver mais <i class="uil uil-angle-down"></i>';
+    window.location.href = '#projects';
+  }
+};
+
+displayProjectsBtn.addEventListener('click', displayHideMoreProjects);
+
+const getGitHubReposData = async () => {
+  try {
+    const response = await fetch(`${API.url}/${API.user}/repos`);
+    const reposData = await response.json();
+
+    setItemOnLocalStorage('projectsData', JSON.stringify(reposData));
+  } catch (error) {
+    console.error(`ERROR => ${error}`);
+  } finally {
+    createProjectsCards();
+  }
+};
+
+getGitHubReposData();
