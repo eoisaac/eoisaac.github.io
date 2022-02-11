@@ -104,7 +104,7 @@ const currentNavLink = () => {
 
 window.addEventListener('scroll', currentNavLink);
 
-// UPDATE COPYRIGHT YEAR ========================================================
+// UPDATE COPYRIGHT YEAR =======================================================
 const copyrightYear = document.querySelector('[data-js="copyright-year"]');
 
 const getCurrentDate = () => {
@@ -125,6 +125,38 @@ const updateCopyrightYear = () => {
     setItemOnLocalStorage('currentYear', currentYear);
     copyrightYear.innerText = getItemOnLocalStorage('currentYear');
   }
-}
+};
 
 updateCopyrightYear();
+
+// UPDATE MY AGE ===============================================================
+const myAge = document.querySelector('[data-js="my-current-age"]');
+
+console.log(getCurrentDate());
+
+// TOGGLE THEME ================================================================
+const toggleThemeBtn = document.querySelector('[data-js="toggle-theme-btn"]');
+const themeIcon = document.querySelector('[data-js="theme-icon"]');
+
+const lightMode = localStorage.getItem('lightMode');
+
+if (lightMode) {
+  document.documentElement.classList.add('light');
+  themeIcon.classList = 'uil uil-moon';
+}
+
+const toggleSiteTheme = () => {
+  const html = document.querySelector('html');
+  html.classList.toggle('light');
+
+  if (html.classList.contains('light')) {
+    themeIcon.classList = 'uil uil-moon';
+    setItemOnLocalStorage('lightMode', true);
+    return;
+  } else {
+    themeIcon.classList = 'uil uil-sun';
+    localStorage.removeItem('lightMode');
+  }
+};
+
+toggleThemeBtn.addEventListener('click', toggleSiteTheme);

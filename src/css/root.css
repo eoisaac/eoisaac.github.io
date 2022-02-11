@@ -5,7 +5,7 @@
 :root {
   /*[COLORS]====================================================================*/
   /*Main*/
-  --primary-color: #9368fc;
+  --primary-color: #9368FC;
 
   /*Backgrounds*/
   --bg-color: #121214;
@@ -15,10 +15,10 @@
 
   /*Titles*/
   --primary-title-color: #ffffff;
-  --secondary-title-color: #c1c1c4;
+  --secondary-title-color: #C1C1C4;
 
   /*Text*/
-  --primary-text-color: #e1e1e6;
+  --primary-text-color: #E1E1E6;
   --secondary-text-color: #a8a8b3;
   --tertiary-text-color: #9e9ea8;
 
@@ -83,7 +83,22 @@
 }
 
 .light:root {
-  /*[COLORS]====================================================================*/
+  --primary-color: #9368FC;
+
+  /*Backgrounds*/
+  --bg-color: #FFFFFF;
+  --primary-container-color: #202024;
+  --secondary-container-color: #29292e;
+  --tertiary-container-color: #000000;
+
+  /*Titles*/
+  --primary-title-color: #222222;
+  --secondary-title-color: #C1C1C4;
+
+  /*Text*/
+  --primary-text-color: #292929;
+  --secondary-text-color: #525252;
+  --tertiary-text-color: #9e9ea8;
 }
 
 html {

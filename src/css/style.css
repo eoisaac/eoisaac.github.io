@@ -63,7 +63,7 @@ body {
 .section__title {
   margin-bottom: var(--medium-margin);
   font-size: var(--large-font-size);
-  color: var(--primary-text-color);
+  color: var(--primary-title-color);
   font-family: var(--monospace-font);
   font-weight: var(--huge-font-weight);
 }
@@ -76,7 +76,7 @@ body {
 .section__subtitle {
   margin-bottom: var(--medium-margin);
   font-size: var(--large-font-size);
-  color: var(--secondary-text-color);
+  color: var(--secondary-title-color);
   font-family: var(--monospace-font);
   font-weight: var(--huge-font-weight);
 }
