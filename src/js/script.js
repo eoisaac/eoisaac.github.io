@@ -1,3 +1,12 @@
+// LOCAL STORAGE ===============================================================
+const setItemOnLocalStorage = (key, value) => {
+  if (key && value) localStorage.setItem(key, value);
+};
+
+const getItemOnLocalStorage = (key) => {
+  if (key) return localStorage.getItem(key);
+};
+
 // SCROLL ANIMATION ============================================================
 // const debounce = function(func, wait, immediate) {
 //   let timeout;
@@ -95,5 +104,27 @@ const currentNavLink = () => {
 
 window.addEventListener('scroll', currentNavLink);
 
-// UPDATE COPRIGHT YEAR ========================================================
-const coprightYear = document.querySelector('[data-js"copright-year"]');
+// UPDATE COPYRIGHT YEAR ========================================================
+const copyrightYear = document.querySelector('[data-js="copyright-year"]');
+
+const getCurrentDate = () => {
+  const currentDate = new Date();
+
+  return currentDate;
+};
+
+const updateCopyrightYear = () => {
+  const currentYear = getCurrentDate().getFullYear();
+
+  if (
+    getItemOnLocalStorage('currentYear') &&
+    getItemOnLocalStorage('currentYear') === currentYear
+  ) {
+    copyrightYear.innerText = getItemOnLocalStorage('currentYear');
+  } else {
+    setItemOnLocalStorage('currentYear', currentYear);
+    copyrightYear.innerText = getItemOnLocalStorage('currentYear');
+  }
+}
+
+updateCopyrightYear();

@@ -83,7 +83,7 @@ body {
 
 .section__subtitle--huge {
   margin: 0;
-  font-size: clamp(40px, 1rem + 8vw, 70px);
+  font-size: clamp(40px, 8vw, 70px);
 }
 
 .section__text {
@@ -325,6 +325,7 @@ body {
   width: 160px;
   border-radius: var(--main-border-radius);
   border: 1px solid var(--primary-color);
+  background-color: var(--primary-container-color);
 }
 
 .about__image:hover {
@@ -378,4 +379,8 @@ body {
   font-size: var(--small-font-size);
   font-family: var(--sans-serif-font);
   color: var(--secondary-text-color);
+}
+
+.uil-heart {
+  color: var(--primary-color);
 }
