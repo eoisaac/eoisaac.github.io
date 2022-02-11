@@ -1,10 +1,16 @@
 // LOCAL STORAGE ===============================================================
 const setItemOnLocalStorage = (key, value) => {
   if (key && value) localStorage.setItem(key, value);
+  return;
 };
 
-const getItemOnLocalStorage = (key) => {
+const getItemOfLocalStorage = (key) => {
   if (key) return localStorage.getItem(key);
+};
+
+const removeItemOfLocalStorage = (key) => {
+  if (key)  localStorage.removeItem(key);
+  return;
 };
 
 // SCROLL ANIMATION ============================================================
@@ -117,13 +123,13 @@ const updateCopyrightYear = () => {
   const currentYear = getCurrentDate().getFullYear();
 
   if (
-    getItemOnLocalStorage('currentYear') &&
-    getItemOnLocalStorage('currentYear') === currentYear
+    getItemOfLocalStorage('currentYear') &&
+    getItemOfLocalStorage('currentYear') === currentYear
   ) {
-    copyrightYear.innerText = getItemOnLocalStorage('currentYear');
+    copyrightYear.innerText = getItemOfLocalStorage('currentYear');
   } else {
     setItemOnLocalStorage('currentYear', currentYear);
-    copyrightYear.innerText = getItemOnLocalStorage('currentYear');
+    copyrightYear.innerText = getItemOfLocalStorage('currentYear');
   }
 };
 
@@ -131,6 +137,7 @@ updateCopyrightYear();
 
 // UPDATE MY AGE ===============================================================
 const myAge = document.querySelector('[data-js="my-current-age"]');
+const myBDay = '21/03/2001'
 
 console.log(getCurrentDate());
 
@@ -138,7 +145,7 @@ console.log(getCurrentDate());
 const toggleThemeBtn = document.querySelector('[data-js="toggle-theme-btn"]');
 const themeIcon = document.querySelector('[data-js="theme-icon"]');
 
-const lightMode = localStorage.getItem('lightMode');
+const lightMode = getItemOfLocalStorage('lightMode');
 
 if (lightMode) {
   document.documentElement.classList.add('light');
@@ -155,8 +162,10 @@ const toggleSiteTheme = () => {
     return;
   } else {
     themeIcon.classList = 'uil uil-sun';
-    localStorage.removeItem('lightMode');
+    removeItemOfLocalStorage('lightMode');
   }
 };
 
 toggleThemeBtn.addEventListener('click', toggleSiteTheme);
+
+// PROJECTS CARDS  =============================================================

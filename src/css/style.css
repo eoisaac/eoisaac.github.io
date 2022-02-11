@@ -83,7 +83,7 @@ body {
 
 .section__subtitle--huge {
   margin: 0;
-  font-size: clamp(40px, 8vw, 70px);
+  font-size: clamp(32px, 8vw, 70px);
 }
 
 .section__text {
@@ -166,11 +166,13 @@ body {
 }
 
 .box-btn {
+  height: 50px;
   background: none;
   outline: none;
   padding: 14px 26px;
   white-space: nowrap;
   user-select: none;
+  text-align: center;
   font-family: var(--sans-serif-font);
   color: var(--primary-text-color);
   font-size: var(--small-font-size);
@@ -357,9 +359,85 @@ body {
 }
 
 /*[PROJECTS]====================================================================*/
-/* .section--projects {
+.section--projects {
 
-} */
+}
+
+.projects__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  gap: var(--medium-gap);
+  margin-top: var(--medium-margin);
+}
+
+.projects-btn {
+  margin-top: var(--medium-margin);
+}
+
+.project-card {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--medium-padding);
+  background-color: var(--primary-container-color);
+  border-radius: var(--main-border-radius);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__top {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--medium-margin);
+}
+
+.card__image {
+  width: 45px;
+  height: 45px;
+}
+
+.card__link {
+  font-size: var(--medium-font-size);
+}
+
+.card__content {
+  font-family: var(--monospace-font);
+}
+
+.card__title {
+  font-size: var(--medium-font-size);
+  font-weight: 500;
+  color: var(--primary-title-color);
+  margin-bottom: var(--medium-margin);
+}
+
+.card__description {
+  text-align: start;
+  font-size: var(--small-font-size);
+  color: var(--secondary-text-color);
+}
+
+.card__footer {
+  display: inline-flex;
+  gap: var(--small-gap);
+}
+
+.card__tag {
+  font-family: var(--sans-serif-font);
+  font-size: var(--tiny-font-size);
+  color: var(--tertiary-text-color);
+}
 
 /*[CONTACT]=====================================================================*/
 
