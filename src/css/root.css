@@ -87,18 +87,18 @@
 
   /*Backgrounds*/
   --bg-color: #FFFFFF;
-  --primary-container-color: #202024;
-  --secondary-container-color: #29292e;
+  --primary-container-color: #e6e6e6;
+  --secondary-container-color: #d8d8d8;
   --tertiary-container-color: #000000;
 
   /*Titles*/
   --primary-title-color: #222222;
-  --secondary-title-color: #C1C1C4;
+  --secondary-title-color: #363636;
 
   /*Text*/
   --primary-text-color: #292929;
   --secondary-text-color: #525252;
-  --tertiary-text-color: #9e9ea8;
+  --tertiary-text-color: #65656b;
 }
 
 html {
