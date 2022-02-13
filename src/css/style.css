@@ -440,6 +440,19 @@ body {
 }
 
 /*[CONTACT]=====================================================================*/
+.section--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--huge-gap);
+  text-align: center;
+}
+
+.section--contact .section__text {
+  max-width: 600px;
+}
+
 
 /*[FOOTER]=====================================================================*/
 
