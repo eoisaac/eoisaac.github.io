@@ -148,10 +148,31 @@ const updateCopyrightYear = () => {
 updateCopyrightYear();
 
 // UPDATE MY AGE ===============================================================
-const myAge = document.querySelector('[data-js="my-current-age"]');
-const myBDay = '21/03/2001';
+const age = document.querySelector('[data-js="my-current-age"]');
 
-console.log(getCurrentDate());
+const updateMyAge = () => {
+  const month = getCurrentDate().getMonth();
+  const day = getCurrentDate().getDate();
+  const year = getCurrentDate().getFullYear();
+
+  let myCurrentAge = 20;
+
+    if (month === 2 && day >= 21) {
+      myCurrentAge = year - 2001;
+
+      if (
+        getItemOfLocalStorage('currentAge') &&
+        getItemOfLocalStorage('currentAge') === myCurrentAge
+      ) {
+        age.innerText = getItemOfLocalStorage('currentAge');
+      } else {
+        setItemOnLocalStorage('currentAge', myCurrentAge);
+        age.innerText = getItemOfLocalStorage('currentAge');
+      }
+    }
+};
+
+updateMyAge();
 
 // TOGGLE THEME ================================================================
 const toggleThemeBtn = document.querySelector('[data-js="toggle-theme-btn"]');
@@ -277,4 +298,3 @@ const getGitHubReposData = async () => {
 };
 
 getGitHubReposData();
- 
