@@ -229,7 +229,7 @@ const createProjectsCards = () => {
       class: 'project-card',
     });
 
-    const projectName = name.replace('_', ' ');
+    const projectName = name.replace(/_/g, ' ');
     const projectDescription = description ? description : '';
     const homepageLink = homepage
       ? `<a href="${homepage}" target="_blank" class="icon-btn card__link">
