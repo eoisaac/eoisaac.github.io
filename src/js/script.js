@@ -201,6 +201,15 @@ const toggleSiteTheme = () => {
 
 toggleThemeBtn.addEventListener('click', toggleSiteTheme);
 
+// TOGGLE LANG =================================================================
+const toggleLangBtn = document.querySelector('[data-js="toggle-lang-btn"]');
+
+const togglePageLang = () => {
+
+};
+
+toggleLangBtn.addEventListener('click', togglePageLang);
+
 // PROJECTS CARDS  =============================================================
 const mainProjectsGrid = document.querySelector(
   '[data-js="main-projects-grid"]'

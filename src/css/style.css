@@ -284,14 +284,31 @@ body {
 .nav__config {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: var(--small-gap);
 }
 
-.nav__config::before {
-  content: 'Tema:';
+
+.theme-btn::before,
+.lang-btn::before  {
   display: block;
+  margin-bottom: var(--tiny-margin);
   font-size: var(--small-font-size);
   color: var(--secondary-text-color);
+}
+
+.theme-btn::before {
+  content: 'Tema:';
+}
+
+.lang-btn::before {
+  content: 'Idioma:';
+}
+
+.country-flag {
+  width: 30px;
+  height: 25px;
 }
 
 /*[HOME]========================================================================*/

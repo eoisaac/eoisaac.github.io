@@ -51,7 +51,12 @@
     font-size: var(--small-font-size);
   }
 
-  .nav__config::before {
+  .nav__config {
+    flex-direction: row;
+  }
+
+  .theme-btn::before, 
+  .lang-btn::before {
     display: none;
   }
 
